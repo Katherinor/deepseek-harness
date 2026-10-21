@@ -1,0 +1,5 @@
+# dsh --patch 补丁列表：向 web profile 追加挂载本地插件
+# 相对路径以本文件所在目录（Harness 根目录）为基准
+# 模型 API Key 由 dsh 内置 llm-deepseek 插件读取环境变量 DEEPSEEK_API_KEY
+- insert:
+      - name: ./scratch-plugin/dist/index.js
